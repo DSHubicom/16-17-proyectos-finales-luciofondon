@@ -1,0 +1,44 @@
+sitemap dsh label="Mi casa"{
+	Frame label="Información"
+	{
+		Text item=fecha
+		Text item=presencia
+		Text item=usuario
+	}
+	Frame label="Estación atmosférica"
+	{
+		Text item=estacion_atmosferica
+		Text item=grados_farenheit
+		Text item=grados_celsius
+		Text item=humedad_tiempo
+		Text item=velocidad_viento
+		Text item=direccion_viento
+	}
+	Frame label="Iluminacion"
+	{
+		Text item=luz1
+		Text item=luz2
+		Text item=luz3
+	}
+	Frame label="Salón"
+	{
+		Switch item=brasero_modo
+		Switch item=brasero_manual
+		Text item=brasero_automatico
+		Text item=temperatura_salon
+	}
+	Frame label="Jardín"
+	{
+		Text item=humedad_jardin
+		Switch item=riego_manual
+		Text item=riego_automatico
+	}
+	Frame label="Casa"
+	{
+		Setpoint item=volumen minValue=0 maxValue=30 step=3
+		Switch item=musica
+		Switch item=siguiente
+
+	}
+
+}
